@@ -60,7 +60,17 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\scritpts\bedamage.cs" />
+    <Compile Include="Assets\Joystick Pack\Examples\JoystickPlayerExample.cs" />
+    <Compile Include="Assets\Joystick Pack\Examples\JoystickSetterExample.cs" />
+    <Compile Include="Assets\Joystick Pack\Scripts\Base\Joystick.cs" />
+    <Compile Include="Assets\Joystick Pack\Scripts\Joysticks\DynamicJoystick.cs" />
+    <Compile Include="Assets\Joystick Pack\Scripts\Joysticks\FixedJoystick.cs" />
+    <Compile Include="Assets\Joystick Pack\Scripts\Joysticks\FloatingJoystick.cs" />
+    <Compile Include="Assets\Joystick Pack\Scripts\Joysticks\VariableJoystick.cs" />
+    <Compile Include="Assets\JumpButton.cs" />
+    <Compile Include="Assets\JumpController.cs" />
+    <Compile Include="Assets\scritpts\PlayerDamage.cs" />
+    <Compile Include="Assets\ThirdPersonUserControl.cs" />
     <Compile Include="Assets\unitychan\Scripts\CameraController.cs" />
     <Compile Include="Assets\unitychan\Scripts\FaceUpdate.cs" />
     <Compile Include="Assets\unitychan\Scripts\IdleChanger.cs" />
