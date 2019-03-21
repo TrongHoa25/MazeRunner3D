@@ -17,10 +17,15 @@ public class PlayerDamage : MonoBehaviour
             anim.SetTrigger("IsDamaged");
         }
     }
+    public void resetJump()
+    {
+        jumpcount = 0;
+        jumped = false;
+    }
    void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.tag == "jumppad"){
-            if(jumpcount < 6){
+            if(jumpcount < 4){
                 if (jumped == false)
                 {
                     player.AddForce(0, 1800f, 0);
