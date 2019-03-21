@@ -1,4 +1,5 @@
 using System;
+using UnityEngine.Audio;
 using UnityEngine;
 using UnityStandardAssets.CrossPlatformInput;
 
@@ -7,6 +8,8 @@ namespace UnityStandardAssets.Characters.ThirdPerson
     [RequireComponent(typeof (ThirdPersonCharacter))]
     public class ThirdPersonUserControl : MonoBehaviour
     {
+        public AudioSource audio;
+        public AudioClip clipw;
         public Joystick joystick;
         public JumpButton jumpbutton;
         private ThirdPersonCharacter m_Character; // A reference to the ThirdPersonCharacter on the object
@@ -17,6 +20,7 @@ namespace UnityStandardAssets.Characters.ThirdPerson
         
         private void Start()
         {
+            InvokeRepeating("PlaySound", 0.0f, 0.5f);
             // get the transform of the main camera
             if (Camera.main != null)
             {
@@ -47,13 +51,29 @@ namespace UnityStandardAssets.Characters.ThirdPerson
             }
         }
 
+        void PlaySound()
+        {
+            if ((joystick.Horizontal != 0 || joystick.Vertical != 0 ) && !audio.isPlaying)
+            {
+                audio.PlayOneShot(clipw);
+                
+            }
+            else if((joystick.Horizontal != 0 || joystick.Vertical != 0) && audio.isPlaying)
+            {
 
+            }
+            else
+            {
+                audio.Stop();
+            }
+        }
         // Fixed update is called in sync with physics
         private void FixedUpdate()
         {
             // read inputs
             //float h = CrossPlatformInputManager.GetAxis("Horizontal");
             //float v = CrossPlatformInputManager.GetAxis("Vertical");
+            
             float h = joystick.Horizontal;
             float v = joystick.Vertical;
             bool crouch = Input.GetKey(KeyCode.C);

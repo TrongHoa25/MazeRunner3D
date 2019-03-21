@@ -1,9 +1,10 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using UnityEngine.Audio;
 using UnityEngine;
 
 public class RockMovement : MonoBehaviour
 {
+    public AudioClip clip;
+    public AudioSource audio;
     public Rigidbody rock;
     public BoxCollider trigger;
     // Start is called before the first frame update
@@ -16,6 +17,7 @@ public class RockMovement : MonoBehaviour
         if(other.gameObject.tag == "Player")
         {
             rock.AddForce(0, 0, -1000000f);
+            audio.PlayOneShot(clip);
         }
     }
 }

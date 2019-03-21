@@ -1,9 +1,11 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using UnityEngine.Audio;
 using UnityEngine;
 
 public class KeyHandler : MonoBehaviour
 {
+    public GameObject key;
+    public AudioClip clip;
+    //public AudioSource audio;
     public PlayerKey playerkey;
 
     // Start is called before the first frame update
@@ -12,6 +14,7 @@ public class KeyHandler : MonoBehaviour
         if(other.gameObject.tag == "Player")
         {
             playerkey.setKey();
+            AudioSource.PlayClipAtPoint(clip,key.transform.position);
             Destroy(gameObject);
         }
     }
