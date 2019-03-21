@@ -60,6 +60,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\audio.cs" />
+    <Compile Include="Assets\AudioManager.cs" />
+    <Compile Include="Assets\FinishHandler.cs" />
     <Compile Include="Assets\Joystick Pack\Examples\JoystickPlayerExample.cs" />
     <Compile Include="Assets\Joystick Pack\Examples\JoystickSetterExample.cs" />
     <Compile Include="Assets\Joystick Pack\Scripts\Base\Joystick.cs" />
@@ -76,10 +79,12 @@
     <Compile Include="Assets\scritpts\JumpButton.cs" />
     <Compile Include="Assets\scritpts\JumpController.cs" />
     <Compile Include="Assets\scritpts\KeyRotation.cs" />
+    <Compile Include="Assets\scritpts\KeyUI.cs" />
     <Compile Include="Assets\scritpts\PauseMenu.cs" />
     <Compile Include="Assets\scritpts\PlayerDamage.cs" />
     <Compile Include="Assets\scritpts\ResetJump.cs" />
     <Compile Include="Assets\scritpts\RockMovement.cs" />
+    <Compile Include="Assets\scritpts\Sound.cs" />
     <Compile Include="Assets\scritpts\ThirdPersonUserControl.cs" />
     <Compile Include="Assets\unitychan\Scripts\CameraController.cs" />
     <Compile Include="Assets\unitychan\Scripts\FaceUpdate.cs" />
