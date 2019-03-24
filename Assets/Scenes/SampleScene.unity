@@ -1620,7 +1620,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &390992961
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5657,7 +5657,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 90, y: -44.000122}
+  m_AnchoredPosition: {x: 90, y: -44}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1397863619
@@ -6991,7 +6991,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 100000, guid: 55c0d5033699c5a4abecb1c3da0ca857, type: 3}
       propertyPath: m_Name
-      value: Fortress_Gate
+      value: Finish
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 55c0d5033699c5a4abecb1c3da0ca857, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7444,7 +7444,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 100000, guid: 55c0d5033699c5a4abecb1c3da0ca857, type: 3}
       propertyPath: m_Name
-      value: Fortress_Gate (1)
+      value: Start
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 55c0d5033699c5a4abecb1c3da0ca857, type: 3}
       propertyPath: m_LocalPosition.x
