@@ -3,6 +3,7 @@ using UnityEngine;
 
 public class RockMovement : MonoBehaviour
 {
+    public Vector3 vt;
     public AudioClip clip;
     public AudioSource audio;
     public Rigidbody rock;
@@ -16,7 +17,7 @@ public class RockMovement : MonoBehaviour
     {
         if(other.gameObject.tag == "Player")
         {
-            rock.AddForce(0, 0, -1000000f);
+            rock.AddForce(vt);
             audio.PlayOneShot(clip);
         }
     }

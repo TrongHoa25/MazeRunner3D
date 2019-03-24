@@ -73,6 +73,7 @@
     <Compile Include="Assets\PlayerKey.cs" />
     <Compile Include="Assets\RPGPackFree\Scripts\BowString.cs" />
     <Compile Include="Assets\RPGPackFree\Scripts\OpenChest.cs" />
+    <Compile Include="Assets\SceneManager.cs" />
     <Compile Include="Assets\ScoreHandler.cs" />
     <Compile Include="Assets\scritpts\ButtonHandler.cs" />
     <Compile Include="Assets\scritpts\JumpButton.cs" />
@@ -85,6 +86,7 @@
     <Compile Include="Assets\scritpts\RockMovement.cs" />
     <Compile Include="Assets\scritpts\Sound.cs" />
     <Compile Include="Assets\scritpts\ThirdPersonUserControl.cs" />
+    <Compile Include="Assets\scritpts\TutorialUI.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01_UGUI.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark02.cs" />
