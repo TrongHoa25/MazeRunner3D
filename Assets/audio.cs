@@ -5,9 +5,6 @@ using UnityEngine;
 public class audio : MonoBehaviour
 {
     
-    void Awake()
-    {
-        FindObjectOfType<AudioManager>().play("backgroundaudio");
-    }
+
 
 }
