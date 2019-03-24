@@ -3,6 +3,7 @@ using UnityEngine;
 using System.Collections;
 public class PlayerDamage : MonoBehaviour
 {
+    public GameObject gameovermenu;
     public Rigidbody player;
     public Animator anim;
     // Start is called before the first frame update
@@ -15,6 +16,9 @@ public class PlayerDamage : MonoBehaviour
         if (col.collider.tag == "rock")
         {
             anim.SetTrigger("IsDamaged");
+            gameovermenu.SetActive(true);
+            Destroy(gameObject);
+            Time.timeScale = 0;
         }
     }
     public void resetJump()

@@ -4,14 +4,21 @@ using UnityEngine;
 public class ButtonHandler : MonoBehaviour
 {
    
-    public GameObject pauseMenu, controller;
+    public GameObject visi, invisi;
    
     
     public void ResumeBtn()
     {
-        pauseMenu.SetActive(false);
-        controller.SetActive(true);
+        visi.SetActive(false);
+        invisi.SetActive(true);
         Time.timeScale = 1;
+    }
+
+    public void Pause()
+    {
+        visi.SetActive(false);
+        invisi.SetActive(true);
+        Time.timeScale = 0;
     }
     
     public void restartBtn()

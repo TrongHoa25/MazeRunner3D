@@ -6,8 +6,6 @@ using UnityEngine.UI;
 public class FinishHandler : MonoBehaviour
 {
     public PlayerKey playerkey;
-    public Text textT;
-    public Text textF;
     public GameObject controller;
     public GameObject finishMenuT;
     public GameObject finishMenuF;
@@ -20,14 +18,13 @@ public class FinishHandler : MonoBehaviour
                 Time.timeScale = 0;
                 controller.SetActive(false);
                 finishMenuT.SetActive(true);
-                textT.text = "Chuc mung ban vua pha dao man 1";
+                
             }
             else
             {
                 Time.timeScale = 0;
                 controller.SetActive(false);
                 finishMenuF.SetActive(true);
-                textF.text = "Ban Phai thu thap du 3 chia khoa de qua man";
             }
         }
     }
