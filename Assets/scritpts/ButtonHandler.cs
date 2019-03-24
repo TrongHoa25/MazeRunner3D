@@ -24,6 +24,7 @@ public class ButtonHandler : MonoBehaviour
     public void restartBtn()
     {
         //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        visi.SetActive(false);
         Application.LoadLevel(Application.loadedLevel);
         Time.timeScale = 1;
     }
