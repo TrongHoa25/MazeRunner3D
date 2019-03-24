@@ -1,12 +1,13 @@
-﻿
-using UnityEngine;
+﻿using UnityEngine;
 using UnitySceneManager = UnityEngine.SceneManagement.SceneManager;
-public class SceneManager : MonoBehaviour
+public class fixmenu : MonoBehaviour
 {
-    
+    public GameObject menu;
     public void changeScene(int sceneIndex)
     {
+        menu.SetActive(false);
         UnitySceneManager.LoadScene(sceneIndex);
         Time.timeScale = 1;
     }
 }
+
