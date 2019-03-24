@@ -51,14 +51,14 @@ namespace UnityStandardAssets.Characters.ThirdPerson
             }
         }
 
-        void PlaySound()
+         void PlaySound()
         {
-            if ((joystick.Horizontal != 0 || joystick.Vertical != 0 ) && !audio.isPlaying)
+            if ((joystick.Horizontal != 0 || joystick.Vertical != 0 ) && !audio.isPlaying && m_Character.m_IsGrounded)
             {
                 audio.PlayOneShot(clipw);
                 
             }
-            else if((joystick.Horizontal != 0 || joystick.Vertical != 0) && audio.isPlaying)
+            else if((joystick.Horizontal != 0 || joystick.Vertical != 0) && audio.isPlaying && m_Character.m_IsGrounded)
             {
 
             }
